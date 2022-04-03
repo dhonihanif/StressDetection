@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Multi Step Form with Progress Bar using jQuery and CSS3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- multistep form -->
+<form id="msform" action="http://localhost:5000" method="POST">
+    <fieldset>
+        <h2 class="fs-title">Hasil anda berada di tingkat stress {{result}}</h2>
+        <h3 class="fs-subtitle">Harap tetap menjalankan kehidupan yang sehat</h3>
+        <p>Apabila anda berada di tingkat 0 atau 1, itu artinya anda 
+      masih dalam keadaan normal. <br /><br />Lalu, jika anda berada di tingkat
+      2, anda sebaiknya meluangkan sedikit waktu untuk beristirahat.<br /><br />
+      Terakhir, jika anda berada di tingkat 3 atau 4, sebaiknya anda 
+      meluangkan waktu untuk liburan ataupun melakukan hal yang anda sukai untuk mengurangi tingkat kesetresan anda karena semakin tinggi tingkat stress anda, semakin pula hal itu mempengaruhi kehidupan sehari - hari anda.</p>
+  </fieldset>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="{{url_for('static', filename='js/script.js')}}"></script>
+
+</body>
+</html>
