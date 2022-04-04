@@ -13,7 +13,7 @@ app = Flask(__name__)
 model = Model(df)
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 def predict(listt):
     pred = np.array(listt).reshape(1, -1)
@@ -29,7 +29,7 @@ def result():
         return render_template('halaman1.html', result=result)
     else:
         lanjut = ''
-        return render_template('home.html', result=lanjut )
+        return render_template('index.html', result=lanjut )
 if __name__ == '__main__':
     app.run(debug=True)
     
